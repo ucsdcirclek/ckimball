@@ -26,9 +26,31 @@ html, body {
   background-color: #464958;
 }
 
+#carouselControls {
+  display: none;
+  left: 8%;
+  top: 20px;
+}
+
+#carouselControls2 {
+  display: none;
+  left: 8%;
+  top: 20px;
+}
+
+.slide {
+  width: 300px;
+  height: 315px;
+}
+
+.carousel-item {
+  left: 13.5%;
+}
+
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+  width: 218px;
+  height: 326px;
+  margin-right: 15%;
 }
 
 .carousel-caption {
@@ -79,6 +101,7 @@ html, body {
    height: 326px;
    margin: 2rem;
    float: left;
+   display: block;
 }
 
 
@@ -86,6 +109,7 @@ html, body {
    width: 218px;
    height: 326px;
    margin: 2rem;
+   display: block;
 }
 
 .attire-container {
@@ -107,6 +131,7 @@ html, body {
 .century{
   font-family: century gothic;
   color: white;
+  font-size: 16px;
 }
 
 .welcome {
@@ -133,15 +158,9 @@ html, body {
   margin: 1rem;
 }
 
-.fun {
-  width: 100%;
-  margin-bottom: 2rem;
+.card-body p {
+  font-size: 16px;
 }
-
-.gif {
-  max-width: 100%;
-}
-
 
 footer {
   background-color: #CEAC55;
@@ -188,16 +207,13 @@ hr.light-100 {
   padding: 1rem;
 }
 
-/*YouTube Video*/
-.video-center {
-  position: relative;
-  margin: 0 auto;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  display: block;
-  padding: .2rem;
+/*Youtube Video*/
+.embed-responsive {
+  width: 1000px;
+  height: 564px;
+  margin-left: 6rem;
 }
+
 
 /*Pricing Table Columns*/
 * {
@@ -270,6 +286,8 @@ hr.light-100 {
     max-width: 100%;
     margin-bottom: 1rem;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 .table-bordered {
@@ -295,6 +313,37 @@ hr.light-100 {
   box-shadow: 0 8px 12px 6px rgba(255,255,255)
 }
 
+#contact-form {
+  margin-left: 7rem;
+}
+
+.fname {
+  width: 234px;
+}
+
+.lname {
+  width: 234px;
+}
+
+#fnlable {
+  margin-right: 0px;
+}
+
+#lnlable {
+  margin-right: 0px;
+}
+
+#elable {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.email {
+  width: 500px;
+}
+
+#success_message{ display: none;}
+
 .card-body {
   background-color: #464958;
 }
@@ -314,11 +363,13 @@ hr.light-100 {
 }
 
 .feature-title {
-  margin-right: 1rem;
+  margin-right: 0rem;
+  margin-left: 1rem;
 }
 
 .feature-desc {
-  margin-right: 1rem;
+  margin-right: 0rem;
+  margin-left: 1rem;
 }
 
 .feature-header {
@@ -326,8 +377,35 @@ hr.light-100 {
 }
 
 .roulette-pic {
-  width: 687px;
-  height: 310px;
+  width: 300px;
+  height: 137px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-bottom: 1rem;
+}
+
+.flipbook-pic {
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+}
+
+.photobooth-pic {
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sambusa-pic {
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
 }
 
 .cnh{
@@ -338,6 +416,8 @@ hr.light-100 {
 }
 
 .ckiword{
+  width: 220px;
+  height: 56px;
   margin-top: 8px;
   float:left !important;
 }
@@ -427,6 +507,123 @@ textarea{
     cursor: text;
     white-space: pre-wrap;
     padding: 2px;
+}
+
+#fattykine {
+  width: 200px;
+  height: 90px; 
+  margin-left: 2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+#sprinkles {
+  width: 220px;
+  height: 90px;
+  margin: 5px;
+}
+
+#fleet {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#culture{
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#farmers {
+  width: 200px;
+  height: 121px;
+  margin: 5px;
+}
+
+#guayaki {
+  width: 150px;
+  height: 169px;
+  margin: 5px;
+}
+
+#habit {
+  width: 200px;
+  height: 105px;
+  margin: 5px;
+}
+
+#philz {
+  width: 230px;
+  height: 230px;
+  margin: 5px;
+}
+
+#nine-ten {
+  width: 300px;
+  height: 59px;
+  margin: 5px;
+}
+
+#pacific {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}
+
+#psprint {
+  width: 200px;
+  height: 40px;
+  margin: 5px;
+}
+
+#rocket {
+  width: 200px;
+  height: 76px;
+  margin: 5px;
+}
+
+#shake {
+  width: 250px;
+  height: 138px;
+  margin: 5px;
+}
+
+#soho {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#broad {
+  width: 230px;
+  height: 55px;
+  margin: 5px;
+}
+
+#midway {
+  width: 230px;
+  height: 56px;
+  margin: 5px;
+}
+
+#ultrazone {
+  width: 250px;
+  height: 68px;
+  margin: 5px;
+}
+
+#woodstock {
+  width: 200px;
+  height: 118px;
+  margin: 5px;
+}
+
+#chipolte {
+  width: 230px;
+  height: 77px;
+  margin: 5px;
 }
 
 
@@ -522,12 +719,30 @@ textarea{
     width: 100%;
   }
 
+  
+
 
 
 }
 
 
 @media (max-width: 576px) {
+
+  .century{
+    font-family: century gothic;
+    color: white;
+    font-size: 16px;
+  }
+  
+  #carouselControls {
+    display: block;
+  }
+
+  #carouselControls2 {
+    display: block;
+    margin-bottom: 4rem;
+  }
+
   .carousel-caption {
     top: 40%;
   }
@@ -561,9 +776,12 @@ textarea{
     visibility: visible; !important
   }
 
+  .attire1 {
+    display: none;
+  }
+
   .attire {
-    width: 100px;
-    height: 153px;
+    display: none;
   }
 
   .attire-container {
@@ -583,10 +801,205 @@ textarea{
     box-shadow: 0 8px 12px 6px rgba(255,255,255)
   }
 
-  .embed-responsive {
-    width: 450px;
-    height: 450px;
+  #contact-form {
+    margin-left: 0rem;
   }
+
+  #fnlable {
+    margin-right: 3.5rem;
+  }
+
+  .fname {
+    width: 234px;
+    margin-left: 1rem;
+  }
+
+  #lnlable {
+    margin-right: 3.5rem;
+  }
+
+  .lname {
+    width: 234px;
+    margin-left: 1rem;
+  }
+
+  #elable {
+    margin-right: 27rem;
+  }
+  
+  .email {
+    width: 234px;
+    margin-left: 1rem;
+  }
+
+  .embed-responsive {
+    width: 300px;
+    height: 300px;
+    margin-left: 0px;
+  }
+
+  .feature-title {
+    margin-right: 1rem;
+  }
+
+  .feature-desc {
+    margin-right: 13px;
+  }
+
+  .card-body p {
+    font-size: 12px;
+  }  
+
+  .accordion-feature {
+    width: 80%;
+    margin-left: 1.5rem;
+  }
+
+  .roulette-pic {
+    width: 144px;
+    height: 90px;
+    margin-right: 2px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .flipbook-pic {
+    width: 200px;
+    height: 133px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+  
+  .photobooth-pic {
+    width: 200px;
+    height: 133px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 290px;
+  }
+
+  .cnh{
+    height: 40px;
+    width: 40px;
+    float: right !important;
+    position: relative;
+  }
+  
+  .ckiword{
+    width: 110px;
+    height: 28px;
+    margin-top: 8px;
+    float:left !important;
+  }
+
+  .masthead{
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  #fattykine {
+    width: 100px;
+    height: 41px; 
+  }
+
+  #sprinkles {
+    width: 100px;
+    height: 30.5px;
+  }
+
+  #fleet {
+    width: 75px;
+    height: 75px;
+  }
+
+  #culture{
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+  }
+
+  #farmers {
+    width: 100px;
+    height: 61px;
+  }
+
+  #guayaki {
+    width: 75px;
+    height: 84px;
+  }
+
+  #habit {
+    width: 100px;
+    height: 52px;
+  }
+
+  #philz {
+    width: 100px;
+    height: 100px;
+  }
+
+  #nine-ten {
+    width: 200px;
+    height: 39px;
+  }
+
+  #pacific {
+    width: 100px;
+    height: 100px;
+  }
+
+  #psprint {
+    width: 100px;
+    height: 20px;
+  }
+
+  #rocket {
+    width: 120px;
+    height: 46px;
+  }
+
+  #shake {
+    width: 150px;
+    height: 83px;
+  }
+
+  #soho {
+    width: 100px;
+    height: 100px;
+  }
+
+  #broad {
+    width: 130px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  #midway {
+    width: 150px;
+    height: 36px;
+  }
+
+  #ultrazone {
+    width: 150px;
+    height: 51px;
+  }
+
+  #woodstock {
+    width: 100px;
+    height: 58px;
+  }
+  
+  
+  
+  
+
+  
+  
 
 }
 
@@ -656,11 +1069,6 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
 
 
 

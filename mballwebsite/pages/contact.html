@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<link href="../css/style.css" rel="stylesheet">
 </head>
+
+<script src="../js/validator.js"></script>
+<script src="../js/contact.js"></script>
 <body>
 
 <!-- Navigation -->
@@ -47,38 +50,6 @@
 </nav>
 
 
-<!--Connect-->
-<div id="social-media-column">
-  <a href="https://www.facebook.com/ucsdcirclek">
-    <div class="facebook-box">
-      <i class="fab fa-2x fa-facebook-f"></i>
-    </div>
-  </a>
-  <a href="http://ucsdcirclek.tumblr.com">
-    <div class="tumblr-box">
-      <i class="fab fa-2x fa-tumblr"></i>
-    </div>
-  </a>
-  <a href="https://instagram.com/ucsdcirclek">
-    <div class="instagram-box">
-      <i class="fab fa-2x fa-instagram"></i>
-    </div>
-  </a>
-  <a href="https://twitter.com/ucsdcirclek">
-    <div class="twitter-box">
-      <i class="fab fa-2x fa-twitter"></i>
-    </div>
-  </a>
-  <a href="https://www.snapchat.com/add/ucsdcirclek">
-    <div class="snapchat-box">
-      <i class="fab fa-2x fa-snapchat-ghost" style="font-size:36px"></i>
-    </div>
-  </a>
-</div>
-
-
-
-
 <!--- Welcome Section -->
 <div class="container-fluid main century open-padding">
 <div class="row welcome text-center">
@@ -86,30 +57,65 @@
     <h1 class="display-4">Contact</h1>
   </div>
   <hr style="padding-bottom: 1.5rem">
-  <div class="col-sm-12 col-lg-6 welcome form">
-    <h4>Got a Question? Send us an email!</h4>
-    <form class="contact-form" action="contactform.php" method="post">
-      <div class="col-12">
-        <h5 style="text-align:left">Name<span style="color:red">*</span></h5>
-        <input style="float:left" type="text" name="fname" placeholder="First">
-        <input style-"float:right" type="text" name="lname" placeholder="Last">
-      </div>
-      <div style="padding-top: 0px" class="col-12">
-        <h5 style="text-align:left">Email<span style="color:red">*</span></h5>
-        <input style="float:left; width: 100%; max-width: 385px" type="text" name="mail">
-      </div>
-      <div style="padding-top: 2rem" class="col-12">
-        <h5 style="text-align:left">Subject/Header<span style="color:red">*</span></h5>
-        <input style="float:left; width: 100%; max-width: 385px" type="text" name="subject">
-      </div>
-      <div style="padding-top: 2rem; padding-bottom: 2rem" class="col-12">
-        <h5 style="text-align:left">Message<span style="color:red">*</span></h5>
-        <textarea style="float:left; width: 100%; max-width: 385px;
-	height: 200px;" name="Message"></textarea>
-      </div>
-      <div class="col-12">
-        <button style="margin-top: 4px" type="submit" name="Submit"
-	class="btn btn-primary btn-lg btn-block">Submit</button>
+
+  <!-- Form Name -->
+  <div class="col-12">
+    <h2>Contact Us!</h2>
+  </div>
+  <div id="contact-form">
+    <form data-toggle="validator" id="contact-form" method="post" action="contact.php" role="form">
+      <div class="messages"></div>
+
+      <div class="controls">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="fnlable" for="form_name">Firstname *</label>
+              <input id="form_name" type="text" name="name" class="form-control fname" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+              <div class="help-block with-errors"></div>
+              <div class="invalid-feedback">
+                Please enter a first name
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="lnlable" for="form_lastname">Lastname *</label>
+              <input id="form_lastname" type="text" name="surname" class="form-control lname" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+              <div class="help-block with-errors"></div>
+              <div class="invalid-feedback">
+                  Please enter a last name
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label id="elabel" for="form_email">Email *</label>
+                <input id="form_email" type="email" name="email" class="form-control email" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                <div class="help-block with-errors"></div>
+                <div class="invalid-feedback">
+                    Please enter a valid email
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+                <label for="form_message">Message *</label>
+                <textarea id="form_message" name="message" class="form-control message" placeholder="Please enter your message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+                <div class="invalid-feedback">
+                    Please enter a message
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+              <input type="submit" class="btn btn-success btn-send" value="Send message">
+          </div>
+        </div>
       </div>
     </form>
   </div>
@@ -182,51 +188,93 @@
 
   
 
-<!--- Footer -->
+<!--Footer-->
 <footer>
-<div class="container-fluid">
-  <div class="row text-center">
-    <div class="col-md-12">
-      <img class="ckiword" src="../img/ckiword.png">
-      <img class="cnh" src="../img/cnh.png">
-      <img class="masthead" src="../img/masthead.png">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <img class="ckiword" src="../img/ckiword.png">
+          <img class="cnh" src="../img/cnh.png">
+          <img class="masthead" src="../img/masthead.png">
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row text-center padding">
-    <div class="col-12">
-      <h3>Thank you to all our sponsers!</h4>
+    
+    <div class="container-fluid">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <h3 style="color: white">Thank you to all our sponsers!</h4>
+        </div>
+        <div class="col-12">
+        <a href="https://www.rhfleet.org/" target="_blank">
+          <img id="fleet" src="../img/fleet.png">
+        </a>
+        <a href="https://www.fattykine.com/" target="_blank">
+          <img id="fattykine" src="../img/fattykine.png">
+        </a>
+        <a href="http://sprinkles.com/" target="_blank">
+          <img id="sprinkles" src="../img/sprinkle.png">
+        </a>
+        <a href="https://www.cultureshockdancecenter.com/" target="_blank">
+          <img id="culture" src="../img/culture.png">
+        </a>
+        <a href="https://www.farmersinsuranceopen.com/" target="_blank">
+          <img id="farmers" src="../img/farmers.png">
+        </a>
+        <a href="https://guayaki.com/" target="_blank">
+          <img id="guayaki" src="../img/guayaki.png">
+        </a>
+        <a href="https://www.habitburger.com/">
+          <img id="habit" src="../img/habit.png">
+        </a>
+        <a href="https://www.philzcoffee.com/">
+          <img id="philz" src="../img/philz.png">
+        </a>
+        <a href="https://www.pacpark.com/">
+          <img id="pacific" src="../img/pacific.png">
+        </a>
+        <a href="https://www.ultrazonesandiego.com/">
+            <img id="ultrazone" src="../img/ultrazone.png">
+        </a>
+        <a href="https://www.psprint.com/">
+          <img id="psprint" src="../img/psprint.png">
+        </a>
+        <a href="https://rockinjump.com/">
+          <img id="rocket" src="../img/rocket.png">
+        </a>
+        <a href="https://www.shakeshack.com/">
+          <img id="shake" src="../img/shake.png">
+        </a>
+        <a href="http://sohosandiego.org/">
+          <img id="soho" src="../img/soho.png">
+        </a>
+        <a href="https://www.thebroad.org/">
+          <img id="broad" src="../img/broad.png">
+        </a>
+        <a href="https://www.midway.org/">
+          <img id="midway" src="../img/midway.png">
+        </a>
+        <a href="https://woodstockssd.com/">
+          <img id="woodstock" src="../img/woodstock.png">
+        </a>
+        <a href="https://www.nine-ten.com/">
+          <img id="nine-ten" src="../img/nine-ten.png">
+        </a>
+        <a>
+          <img id="chipolte" src="../img/chipolte.png">
+        </a>
+        
+      </div>
+      
+        <div class="col-12">
+          <hr class="light-100">
+          <h5 style="color: white">&copy; 2018 University of Califnoria San Diego Circle K International</h5>
+          <h5 style="color: white">All rights reserved</h5>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4 col-3">
-      <img class="fattykine" src="../img/fattykine.png">
-    </div>
-    <div class="col-sm-4 col-3">
-      <img class="sprinkle" src="../img/sprinkle.png">
-    </div>
-    <div class="col-12">
-      <hr class="light-100">
-      <h5>&copy; 2018 University of Califnoria San Diego Circle K International</h5>
-      <h5>All rights reserved</h5>
-    </div>
-  </div>
-</div>
-</footer>
-
+    </footer>
+  
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
