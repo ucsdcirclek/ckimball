@@ -862,16 +862,24 @@ textarea{
   }
   
   .flipbook-pic {
-    width: 200px;
-    height: 133px;
+    width: 150px;
+    height: 100px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 1rem;
   }
   
   .photobooth-pic {
-    width: 200px;
-    height: 133px;
+    width: 150px;
+    height: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .sambusa-pic {
+    width: 150px;
+    height: 100px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 1rem;
@@ -997,8 +1005,11 @@ textarea{
   
   
 
- 
+  
+  
+
 }
+
 
 
 
@@ -1064,7 +1075,7 @@ Large (lg) devices (desktops, 992px and up)
 
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
-
 */
+
 
 }
