@@ -211,10 +211,10 @@ hr.light-100 {
 .border {
   border: 0;
   border-radius: 20px;
-  background: rgba(139,139,139);
+  background: rgb(139,139,139);
   min-height: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 1px 1px rgb(0,0,0,.05);
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 
 .border-small {
@@ -268,7 +268,7 @@ hr.light-100 {
 }
 
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(255,255,255)
+    box-shadow: 0 8px 12px 0 rgb(255,255,255)
 }
 
 .price .header {
@@ -294,7 +294,7 @@ hr.light-100 {
   padding: 20px;
   text-align: center;
   background-color: #7F818D;
-  color:white;-
+  color:white;
 }
 
 .price .grey {
@@ -341,7 +341,7 @@ hr.light-100 {
 }
 
 .committee:hover {
-  box-shadow: 0 8px 12px 6px rgba(255,255,255)
+  box-shadow: 0 8px 12px 6px rgb(255,255,255)
 }
 
 #contact-form {
@@ -795,7 +795,7 @@ textarea{
   }
 
   .committee:hover {
-    box-shadow: 0 8px 12px 6px rgba(255,255,255)
+    box-shadow: 0 8px 12px 6px rgb(255,255,255)
   }
 
   .accordion-faq {
@@ -871,7 +871,7 @@ textarea{
   }
 
   .direction-line {
-    visibility: visible; !important
+    visibility: visible;
   }
 
   .attire1 {
@@ -896,7 +896,7 @@ textarea{
   }
 
   .committee:hover {
-    box-shadow: 0 8px 12px 6px rgba(255,255,255)
+    box-shadow: 0 8px 12px 6px rgb(255,255,255)
   }
 
   #contact-form {
@@ -1231,6 +1231,4 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
 
