@@ -124,6 +124,11 @@ html, body {
   padding: 70px 0 50px 0;
 }
 
+.open-padding2{
+  padding: 70px 0 0px 0;
+}
+
+
 .logo-text{
   font-family: lavanderia;
 }
@@ -194,13 +199,22 @@ hr.light-100 {
   height: 580px;
 }
 
+.map2 {
+  margin: 2rem;
+} 
+
+.map2 iframe {
+  width: 100%;
+  height: 290px;
+}
+
 .border {
   border: 0;
   border-radius: 20px;
-  background: rgba(139,139,139,1);
+  background: rgba(139,139,139);
   min-height: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: 0 1px 1px rgb(0,0,0,.05);
 }
 
 .border-small {
@@ -214,6 +228,23 @@ hr.light-100 {
   margin-left: 6rem;
 }
 
+.arrowup {
+  transform: scaleY(-1);
+  position: fixed;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+}
+
+.table-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-table a::after {
+  transform: 250ms;
+}
 
 /*Pricing Table Columns*/
 * {
@@ -237,7 +268,7 @@ hr.light-100 {
 }
 
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgb(255,255,255)
+    box-shadow: 0 8px 12px 0 rgba(255,255,255)
 }
 
 .price .header {
@@ -263,7 +294,7 @@ hr.light-100 {
   padding: 20px;
   text-align: center;
   background-color: #7F818D;
-  color:white;
+  color:white;-
 }
 
 .price .grey {
@@ -310,7 +341,7 @@ hr.light-100 {
 }
 
 .committee:hover {
-  box-shadow: 0 8px 12px 6px rgb(255,255,255)
+  box-shadow: 0 8px 12px 6px rgba(255,255,255)
 }
 
 #contact-form {
@@ -338,11 +369,19 @@ hr.light-100 {
   margin-left: 0px;
 }
 
+#subject_label {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .email {
   width: 500px;
 }
 
-#success_message{ display: none;}
+.subject {
+  width: 500px;
+}
+
 
 .card-body {
   background-color: #464958;
@@ -370,6 +409,26 @@ hr.light-100 {
 .feature-desc {
   margin-right: 0rem;
   margin-left: 1rem;
+  font-size: 16px;
+}
+
+.feature-desc2 {
+  margin-right: 0rem;
+  margin-left: 1rem;
+  line-height: 5px;
+}
+
+.feature-button {
+  background-color: #CEAC55;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px; 
+  margin-bottom: 30px; 
+  color: white
+}
+
+.hook {
+  line-height: 5px;
 }
 
 .feature-header {
@@ -406,6 +465,45 @@ hr.light-100 {
   margin-right: 0px;
   margin-left: 0px;
   margin-bottom: 1rem;
+}
+
+.myth1-pic {
+  width: 300px;
+  height: 200px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+}
+
+.myth2-pic {
+  width: 300px;
+  height: 176px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+}
+
+.myth3-pic {
+  width: 300px;
+  height: 176px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 1rem;
+}
+
+#fleetscience1 {
+  margin-left: 3rem;
+  margin-top: 0px;
+  width: 1170px;
+  height: 264px;
+}
+
+#fleetscience2 {
+  right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  width: 1170px;
+  height: 264px;
 }
 
 .cnh{
@@ -629,11 +727,11 @@ textarea{
 
 
 /*---Media Queries --*/
-@media screen and (max-width: 992px) {
+@media (max-width: 992px) {
 
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   .carousel-caption {
     top: 45%;
@@ -697,7 +795,7 @@ textarea{
   }
 
   .committee:hover {
-    box-shadow: 0 8px 12px 6px rgb(255,255,255)
+    box-shadow: 0 8px 12px 6px rgba(255,255,255)
   }
 
   .accordion-faq {
@@ -726,7 +824,7 @@ textarea{
 }
 
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
 
   .century{
     font-family: century gothic;
@@ -773,7 +871,8 @@ textarea{
   }
 
   .direction-line {
-    visibility: visible; 
+    visibility: visible; !important
+  }
 
   .attire1 {
     display: none;
@@ -797,7 +896,7 @@ textarea{
   }
 
   .committee:hover {
-    box-shadow: 0 8px 12px 6px rgb(255,255,255)
+    box-shadow: 0 8px 12px 6px rgba(255,255,255)
   }
 
   #contact-form {
@@ -825,8 +924,17 @@ textarea{
   #elable {
     margin-right: 27rem;
   }
+
+  #subject-label {
+    margin-right: 27px;
+  }
   
   .email {
+    width: 234px;
+    margin-left: 1rem;
+  }
+
+  .subject {
     width: 234px;
     margin-left: 1rem;
   }
@@ -837,12 +945,38 @@ textarea{
     margin-left: 0px;
   }
 
+  .arrowup {
+    transform: scaleY(-1);
+    position: fixed;
+    right: 2rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .feature-button {
+    background-color: #CEAC55;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    color: white
+  }
+
   .feature-title {
     margin-right: 1rem;
   }
 
   .feature-desc {
     margin-right: 13px;
+    font-size: 16px;
+  }
+
+  .feature-desc2 {
+    line-height: 1.5rem;
+  }
+
+  .hook {
+    line-height: normal;
   }
 
   .card-body p {
@@ -864,25 +998,46 @@ textarea{
   .flipbook-pic {
     width: 150px;
     height: 100px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 1rem;
   }
   
   .photobooth-pic {
     width: 150px;
     height: 100px;
-    margin-right: 0px;
-    margin-left: 0px;
-    margin-bottom: 1rem;
   }
 
   .sambusa-pic {
     width: 150px;
     height: 100px;
-    margin-right: 0px;
-    margin-left: 0px;
+  }
+
+  .myth1-pic {
+    width: 150px;
+    height: 100px;
+  }
+  
+  .myth2-pic {
+    width: 150px;
+    height: 88px;
+  }
+  
+  .myth3-pic {
+    width: 150px;
+    height: 88px;
+  }
+
+  #fleetscience1 {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 300px;
+    height: 68px;
+  }
+  
+  #fleetscience2 {
+    right: 7rem;
+    margin-top: 0rem;
     margin-bottom: 1rem;
+    width: 300px;
+    height: 68px;
   }
 
   .map iframe {
@@ -891,15 +1046,15 @@ textarea{
   }
 
   .cnh{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     float: right !important;
     position: relative;
   }
   
   .ckiword{
-    width: 110px;
-    height: 28px;
+    width: 150px;
+    height: 38px;
     margin-top: 8px;
     float:left !important;
   }
@@ -1078,4 +1233,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
 */
 
 
-}
+
