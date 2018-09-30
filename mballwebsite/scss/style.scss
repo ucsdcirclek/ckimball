@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 
 @font-face { font-family: lavanderia; src: url('lavanderia regular.otf');}
@@ -23,7 +24,21 @@ html, body {
 }
 
 .main {
-  background-color: #464958;
+  background-color: #13182E;
+}
+
+.mainW {
+  background-color: white;
+}
+
+.cause {
+  font-size: 32px;
+}
+
+.event_info {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
 }
 
 #carouselControls {
@@ -72,6 +87,14 @@ html, body {
   padding-bottom: 1rem;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
 .banner {
   width: 1000px;
 }
@@ -103,7 +126,6 @@ html, body {
    float: left;
    display: block;
 }
-
 
 .attire {
    width: 218px;
@@ -139,6 +161,18 @@ html, body {
   font-size: 16px;
 }
 
+.lato {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+.latoB {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
 .welcome {
   width: 75%;
   margin: 0 auto;
@@ -168,7 +202,6 @@ html, body {
 }
 
 footer {
-  background-color: #CEAC55;
   color: #d5d5d5;
 }
 
@@ -196,16 +229,7 @@ hr.light-100 {
 
 .map iframe {
   width: 100%;
-  height: 580px;
-}
-
-.map2 {
-  margin: 2rem;
-} 
-
-.map2 iframe {
-  width: 100%;
-  height: 290px;
+  height: 100%;
 }
 
 .border {
@@ -268,7 +292,7 @@ hr.light-100 {
 }
 
 .price:hover {
-    box-shadow: 0 8px 12px 0 rgb(255,255,255)
+    box-shadow: 0 8px 12px 0 rgb(206,172,85)
 }
 
 .price .header {
@@ -303,6 +327,12 @@ hr.light-100 {
     color: white;
 }
 
+.price .greyV {
+  background-color: #7F818D;
+  font-size: 16px;
+  color: white;
+}
+
 .direction-line {
   margin-left: 1rem;
   visibility: hidden;
@@ -312,6 +342,10 @@ hr.light-100 {
   width: 100%;
 }
 
+.left_grid {
+  padding-right: .75rem;
+}
+
 .table {
     width: 100%;
     max-width: 100%;
@@ -319,16 +353,24 @@ hr.light-100 {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-  }
+    color: white;
+}
 
 .table-bordered {
   border: 1px solid #dee2e6;
   border-radius: 10px;
+  right: 0px;
+}
+
+table th {
+  text-align: center; 
 }
 
 .table td { 
   background-color: #7F818D;
   display: table-cell;
+  padding: .75rem;
+  table-layout: fixed;
 }
 
 .committee {
@@ -384,11 +426,12 @@ hr.light-100 {
 
 
 .card-body {
-  background-color: #464958;
+  background-color: #13182E;
+  color: white;
 }
 
 .card-header {
-  background-color: #7F818D;
+  background-color: #464958;
 }
 
 .accordion-faq {
@@ -404,6 +447,7 @@ hr.light-100 {
 .feature-title {
   margin-right: 0rem;
   margin-left: 1rem;
+  font-size: 1.75rem;
 }
 
 .feature-desc {
@@ -492,8 +536,9 @@ hr.light-100 {
 }
 
 #fleetscience1 {
-  margin-left: 3rem;
+  margin-left: 1rem;
   margin-top: 0px;
+  margin-bottom: 2rem;
   width: 1170px;
   height: 264px;
 }
@@ -516,8 +561,14 @@ hr.light-100 {
 .ckiword{
   width: 220px;
   height: 56px;
-  margin-top: 8px;
+  margin-top: 12px;
   float:left !important;
+}
+
+.cki {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 1rem;
 }
 
 .kiwanis{
@@ -530,7 +581,10 @@ hr.light-100 {
 
 .masthead{
   width: 100%;
+  height: 23px;
   padding-top: 0.5rem;
+  margin-top: 0px;
+  position: static;
 }
 
 .logos{
@@ -563,9 +617,19 @@ hr.light-100 {
   color: #517fa4
 }
 
+.fa-youtube {
+  color: #bb0000;
+}
+
 .fa-facebook:hover,
-.fa-instagram:hover {
+.fa-instagram:hover,
+.fa-youtube:hover {
   color: #d5d5d5;
+}
+
+.social a {
+  font-size: 4em;
+  padding: 2rem;
 }
 
 .form {
@@ -587,7 +651,7 @@ textarea{
 
 #fattykine {
   width: 200px;
-  height: 90px; 
+  height: 90px;
   margin-left: 2rem;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -601,20 +665,20 @@ textarea{
 }
 
 #fleet {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   margin: 5px;
 }
 
 #culture{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 5px;
 }
 
 #farmers {
-  width: 200px;
-  height: 121px;
+  width: 600px;
+  height: 363px;
   margin: 5px;
 }
 
@@ -643,8 +707,8 @@ textarea{
 }
 
 #pacific {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 5px;
 }
 
@@ -655,8 +719,8 @@ textarea{
 }
 
 #rocket {
-  width: 200px;
-  height: 76px;
+  width: 250px;
+  height: 95px;
   margin: 5px;
 }
 
@@ -702,12 +766,130 @@ textarea{
   margin: 5px;
 }
 
+#chick_fil {
+  width: 220px;
+  height: 103px;
+  margin: 5px;
+}
+
+#costco {
+  width: 220px;
+  height: 78px;
+  margin: 5px;
+}
+
+#eight_ele {
+  width: 280px;
+  height: 75px;
+  margin: 5px;
+}
+
+#harrah {
+  width: 250px;
+  height: 109px;
+  margin: 5px;
+}
+
+#lemonade {
+  width: 220px;
+  height: 61px;
+  margin: 5px;
+}
+
+#newchild {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+#sdpadres {
+  width: 130px;
+  height: 130px;
+  margin: 5px;
+}
+
+#lot {
+  width: 220px;
+  height: 115px;
+  margin: 5px;
+}
+
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+/*
+@media (min-width: 1300px) {
+
+  #fleetscience1 {
+    margin-left: 15rem;
+    margin-top: 0px;
+    width: 2000px;
+    height: 457px;
+  }
+
+  .lato {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 32px;
+  }
+
+  .latoB {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: 32px;
+  }
+
+  .cause {
+    font-size: 72px;
+  }
+
+  .feature-button {
+    background-color: #CEAC55;
+    width: 350px;
+    height: 87.5px;
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    color: white
+  }
+
+  .accordion-feature {
+    width: 80%;
+    margin-left: 13rem;
+  }
+
+  .feature-title {
+    margin-right: 0rem;
+    margin-left: 1rem;
+    font-size: 3.5rem;
+  }
+  
+  .feature-desc {
+    margin-right: 0rem;
+    margin-left: 1rem;
+    font-size: 28px;
+  }
+  
+  .feature-desc2 {
+    margin-right: 0rem;
+    margin-left: 1rem;
+    line-height: 5px;
+  }
+
+  .price .grey {
+    background-color: #7F818D;
+    font-size: 32px;
+    color: white;
+  }
+
+  .card-body p {
+    font-size: 32px;
+  }
+
+  .event_info {
+    font-size: 32px;
 
 }
+*/
 
 @media (max-width: 768px) {
 
@@ -795,16 +977,18 @@ textarea{
     width: 100%;
   }
 
-  
-
-
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
 
 }
 
 
+
 @media (max-width: 576px) {
 
-  .century{
+  .century {
     font-family: century gothic;
     color: white;
     font-size: 16px;
@@ -850,6 +1034,20 @@ textarea{
 
   .direction-line {
     visibility: visible;
+  }
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+  .left_grid {
+    padding-right: .35rem;
   }
 
   .attire1 {
@@ -1005,7 +1203,7 @@ textarea{
   }
 
   #fleetscience1 {
-    margin-left: 2rem;
+    margin-left: 0rem;
     margin-top: 1rem;
     width: 300px;
     height: 68px;
@@ -1021,7 +1219,7 @@ textarea{
 
   .map iframe {
     width: 100%;
-    height: 290px;
+    height: 100%;
   }
 
   .cnh{
@@ -1030,22 +1228,48 @@ textarea{
     float: right !important;
     position: relative;
   }
+
+  .cki {
+    height: 1em;
+    width: 1em;
+    margin-bottom: 10px;
+  }
+  
   
   .ckiword{
     width: 150px;
     height: 38px;
-    margin-top: 8px;
+    margin-top: 16px;
     float:left !important;
   }
 
   .masthead{
     width: 100%;
-    margin-top: -10px;
+    height: 14px;
+    margin-top: 5rem;
+    position: absolute;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: .7rem;
+  }
+
+  #farmers {
+    width: 350px;
+    height: 212px;
+    margin: 5px;
+  }
+
+  #culture{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
   }
 
   #fattykine {
     width: 100px;
-    height: 41px; 
+    height: 41px;
   }
 
   #sprinkles {
@@ -1054,20 +1278,15 @@ textarea{
   }
 
   #fleet {
-    width: 75px;
-    height: 75px;
+    width: 200px;
+    height: 200px;
   }
 
-  #culture{
-    width: 75px;
-    height: 75px;
+  #rocket {
+    width: 160px;
+    height: 60px;
     margin: 5px;
-  }
-
-  #farmers {
-    width: 100px;
-    height: 61px;
-  }
+  }  
 
   #guayaki {
     width: 75px;
@@ -1085,23 +1304,18 @@ textarea{
   }
 
   #nine-ten {
-    width: 200px;
-    height: 39px;
+    width: 150px;
+    height: 29px;
   }
 
   #pacific {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   #psprint {
     width: 100px;
     height: 20px;
-  }
-
-  #rocket {
-    width: 120px;
-    height: 46px;
   }
 
   #shake {
@@ -1134,11 +1348,60 @@ textarea{
     width: 100px;
     height: 58px;
   }
-  
-  
-  
-  
 
+  #chipolte {
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+  }
+  
+  #chick_fil {
+    width: 150px;
+    height: 70px;
+    margin: 5px;
+  }
+
+  #costco {
+    width: 150px;
+    height: 53px;
+    margin: 5px;
+  }
+
+  #eight_ele {
+    width: 180px;
+    height: 48px;
+    margin: 5px;
+  }
+
+  #harrah {
+    width: 150px;
+    height: 65px;
+    margin: 5px;
+  }
+
+  #lemonade {
+    width: 150px;
+    height: 42px;
+    margin: 5px;
+  }
+
+  #newchild {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  #sdpadres {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  #lot {
+    width: 150px;
+    height: 78px;
+    margin: 5px;
+  }
   
   
 
@@ -1210,3 +1473,6 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+
+
