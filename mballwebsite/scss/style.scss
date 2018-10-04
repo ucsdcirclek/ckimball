@@ -261,9 +261,26 @@ hr.light-100 {
   z-index: 999;
 }
 
+.arrowup2 {
+  transform: scaleY(-1);
+  position: fixed;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  z-index: 999;
+  display: none;
+}
+
+
 .table-link {
   color: white;
   text-decoration: underline;
+}
+
+.faq-link {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 .main-table a::after {
@@ -434,6 +451,22 @@ table th {
   background-color: #464958;
 }
 
+.big-feature {
+  display: none;
+}
+
+.big-feature-title {
+  font-size: 32px;
+}
+
+.mobile-faq {
+  display: none;
+}
+
+.desk-faq {
+  display: block;
+}
+
 .accordion-faq {
   width: 85%;
   margin-left: 6rem;
@@ -442,6 +475,7 @@ table th {
 .accordion-feature {
   width: 80%;
   margin-left: 6rem;
+  display: block;
 }
 
 .feature-title {
@@ -454,12 +488,14 @@ table th {
   margin-right: 0rem;
   margin-left: 1rem;
   font-size: 16px;
+  display: block;
 }
 
 .feature-desc2 {
   margin-right: 0rem;
   margin-left: 1rem;
   line-height: 5px;
+  display: block;
 }
 
 .feature-button {
@@ -940,6 +976,7 @@ textarea{
 
   .feature-desc {
     margin-right: 1rem;
+    display: none;
   }
 
   .feature-header {
@@ -961,6 +998,14 @@ textarea{
   .accordion-faq {
     width: 85%;
     margin-left: 4rem;
+  }
+
+  .desk-faq {
+    display: none;
+  }
+
+  .mobile-faq {
+    display: block;
   }
 
   .accordion-feature {
@@ -1129,6 +1174,21 @@ textarea{
     height: 30px;
   }
 
+  .arrowup2 {
+    transform: scaleY(-1);
+    position: fixed;
+    right: 2rem;
+    width: 30px;
+    height: 30px;
+    display: block;
+  }
+
+
+
+  .big-feature {
+    display: block;
+  }
+
   .feature-button {
     background-color: #CEAC55;
     width: 200px;
@@ -1162,44 +1222,45 @@ textarea{
   .accordion-feature {
     width: 80%;
     margin-left: 1.5rem;
+    display: none;
   }
 
   .roulette-pic {
-    width: 144px;
-    height: 90px;
+    width: 180px;
+    height: 112.5px;
     margin-right: 2px;
     margin-bottom: 1.5rem;
   }
   
   .flipbook-pic {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
   }
   
   .photobooth-pic {
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 133px;
     margin-left: 0px;
   }
 
   .sambusa-pic {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
   }
 
   .myth1-pic {
-    width: 150px;
-    height: 100px;
+    width: 180px;
+    height: 120px;
   }
   
   .myth2-pic {
-    width: 150px;
-    height: 88px;
+    width: 180px;
+    height: 105px;
   }
   
   .myth3-pic {
-    width: 150px;
-    height: 88px;
+    width: 180px;
+    height: 105px;
   }
 
   #fleetscience1 {
@@ -1213,8 +1274,8 @@ textarea{
     right: 7rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
-    width: 300px;
-    height: 68px;
+    width: 340px;
+    height: 77px;
   }
 
   .map iframe {
@@ -1473,5 +1534,4 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
 
