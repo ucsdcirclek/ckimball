@@ -57,6 +57,14 @@ $(document).on('click', 'a[href="#C5"]', function (event) {
      }, 500);
 });
 
+$(document).on('click', 'a[href="#C6"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+     }, 500);
+});
+
 $(document).on('click', 'a[href="#Top"]', function (event) {
     event.preventDefault();
 
@@ -74,7 +82,7 @@ $(document).ready(function() {
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light latoB fixed-top">
 <div class="container-fluid">
  <a class="navbar-brand logo-text" style="color: #7F818D" href="index.html">
   <img src="../img/gold-mask.svg" style="height: 63px; width: 63px">
@@ -118,10 +126,11 @@ $(document).ready(function() {
       <hr>
       <a href="#C1"><p class="table-link">What is Masquerade Ball?</p></a>
       <p id="C1"></p>
-      <a href="#C2"><p class="table-link">Admission Information/Features</p></a>
-      <a href="#C3"><p class="table-link">Parking and Transportation</p></a>
-      <a href="#C4"><p class="table-link">Attire and Conduct</p></a>
-      <a href="#C5"><p class="table-link">Direction and Location</p></a>
+      <a href="#C2"><p class="table-link">Admission Information/ Documents</p></a> 
+      <a href="#C3"><p class="table-link">Features</p></a>
+      <a href="#C4"><p class="table-link">Parking and Transportation</p></a>
+      <a href="#C5"><p class="table-link">Attire and Conduct</p></a>
+      <a href="#C6"><p class="table-link">Direction and Location</p></a>
   </div>
 </div>
 </div>
@@ -233,16 +242,47 @@ $(document).ready(function() {
     </div>
 
  <!--Feature Section-->   
-    <div class="col-12" style="font-size: 20px">
+
+    <div class="col-12 latoB" style="font-size: 20px">
         <a href="https://goo.gl/forms/02cfcY9lHl5LWacv2" target="_blank">
             <button type="button" class="btn feature-button lato lead">Buy Your Tickets Now!</button>
         </a>
-      <h3 class="feature-title">Features</h3>
+
+        <p>
+          We are accepting <a href="https://venmo.com/UCSDCircleK" target="_blank">Venmo</a> (@UCSDCircleK) and cash. 
+          For alternative payment methods, please contact us on Facebook or email mball@ucsdcki.org.
+        </p>
+        <p>
+          If you are a UCSD Student and would like to pay in cash, you can pay at our table on Library Walk
+          every day from 10AM - 2PM.
+        </p>
+        <p>
+          If you are a CNH CKI Member and would like to pay in cash, please turn it into your club president.
+        </p>
+
+        <h3 style="margin-top: 4rem">Required Documents</h3>
+        <hr>
+        <p>Please fill out the required documents and bring them with you during check in</p>
+        <a href=" https://drive.google.com/file/d/1HFIfH6xre4fj8Z4-EYkfVFKZeL0_P7XQ/view" target="_blank">
+          <button type="button" class="btn feature-button lato lead">Code of Conduct / Wavier</button>
+        </a>
+        <p>
+          If you are coming from far away, you can find a place to stay offered by one of our UCSD Circle K 
+          members. Just fill out the housing form below.
+        </p>
+        <a id="C3" href="http://bit.ly/Mball2018HousingForm" target="_blank">
+          <button type="button" class="btn feature-button lato lead">Housing Form</button>
+        </a>
+    
+      <br>
+      <br>
+      <h3 class="display-4"><b>Features</b></h3>
       <p class="feature-desc2">*More features to be revealed soon!*</p>
+      <hr>
     </div>
 
     <div style="background-color: #13182E; border-style: solid; border-color: white
-    ; border-radius: 25px; border-width: 6px" class="col-md-12 col-lg-6 lato">
+    ; border-radius: 25px; border-width: 12px" class="col-md-12 col-lg-6 lato">
         <h2 style="padding-bottom: 1rem" class="cause">Casino Tables</h2>
         <p>Hosted by <a href="https://www.absolute-casino.com/" target="_blank">Absolute Casino</a>,
            join us for a night of Blackjack, Poker, and Roulette!
@@ -257,7 +297,7 @@ $(document).ready(function() {
       </div>
 
       <div style="background-color: #13182E; border-style: solid; border-color: white
-      ; border-radius: 25px; border-width: 6px" class="col-md-12 col-lg-6 lato">
+      ; border-radius: 25px; border-width: 12px" class="col-md-12 col-lg-6 lato">
           <h2 style="padding-bottom: 1rem" class="cause">Food: Frech Gourmet + Red Sambusas</h2>
           <p>
             Celebrate our 21st Masquerade Ball and treat yourself to a delightful slice of exquisite cake
@@ -272,7 +312,7 @@ $(document).ready(function() {
       </div>
 
       <div style="background-color: #13182E; border-style: solid; border-color: white
-      ; border-radius: 25px; border-width: 6px" class="col-md-12 col-lg-12 lato">
+      ; border-radius: 25px; border-width: 12px" class="col-md-12 col-lg-12 lato">
           <h2 style="padding-bottom: 1rem" class="cause">Fattykine Flipbook Photobooth</h2>
           <p>Want to re-live one of the best moments ever? Shanna and Dale from 
               <a href="https://www.fattykine.com">Fattykine</a> will be providing a super cute 
@@ -284,16 +324,15 @@ $(document).ready(function() {
           </p>
           <p>
             VIP pass holders may invite non-VIP guests into the flipbook photobooth. Free physical
-            copies of the flipbook will only be given to VIP recipients, however non-VIP guests may purchase a 
-            copy of the flipbook for *insert price here*. If you do not want a physical copy, everyone in the 
-            your photo group will get a link to a 7 second video of your flipbook.
+            copies of the flipbook will only be given to VIP recipients. If you do not want a physical copy,
+            everyone in the your photo group will get a link to a 7 second video of your flipbook.
           </p>
           <img class="flipbook-pic" src="../img/flipbook.png">
           <img class="photobooth-pic" src="../img/photobooth.png">
       </div>
 
       <div style="background-color: #13182E; border-style: solid; border-color: white
-      ; border-radius: 25px; border-width: 6px" class="col-md-12 col-lg-12 lato">
+      ; border-radius: 25px; border-width: 12px" class="col-md-12 col-lg-12 lato">
           <h2 style="padding-bottom: 1rem" class="cause">Mythbusters: The Explosive Exhibition</h2>
           <p>
               Stop by the expanded upstair gallery and enjoy an extraordinary experience busting out old and new myths. 
@@ -312,8 +351,34 @@ $(document).ready(function() {
             <img class="myth3-pic" src="../img/myth3.jpg">
             <img class="myth1-pic" src="../img/myth1.jpg">
       </div>
+
+
+      <div style="background-color: #13182E; border-style: solid; border-color: white
+      ; border-radius: 25px; border-width: 12px" class="col-md-12 col-lg-12 lato">
+          <h2 style="padding-bottom: 1rem" class="cause">Onsite Raffle and Auction</h2>
+          <p>Feeling lucky? Participate in our raffle to go home with an amazing prize! 
+            Cash in your credit winnings or buy additional raffle tickets for a chance to
+            take home donations from our generous sponsors, <b>each valued at $100 or more!</b>
+            Whether it’s free unlimited rides at Santa Monica’s Pacific Park, tickets to
+            the National History Museum with a Chipotle gift card, or a dance class package
+            from San Diego’s Culture Shock Dance Center, we have a package for you!
+          </p>
+          <p>For our more valuable items, we are conducting a silent auction. Guarantee the prize
+             you want by betting as much money as possible! Some of our auction items include:
+             a weeknight stay at Harrah’s Resort Southern California with two free buffets,
+             one month of yoga classes at Eight Elements West La Jolla, and a $100 Costco gift card.
+          </p>
+          <p>
+            Help us raise more money for Feeding America while potentially taking home a worthwhile prize!
+            Stay tuned to the week leading up to Masquerade Ball to find out about all our available
+            raffle/auction packages on our <a href="https://www.facebook.com/ucsdcki.mball/" target="_blank">
+            Facebook event page</a>. <b>We accept cash/venmo payments</b> at the venue, just look out for the
+            raffle table!
+          </p>
+          <img class="ticket" src="../img/tickets.jpg">
+      </div>
   </div>
-  <p id="C3"></p>
+  <p id="C4"></p>
 </div>
  
 <!--Parking and Transportation-->
@@ -323,6 +388,7 @@ $(document).ready(function() {
       <h1 class="display-4">Parking and Transportation</h1>
       <hr>
       <h4>Shuttling</h4>
+      <img class="party" src="../img/party.jpg">
       <p>
           This year, Masquerade Ball Committee’s is introducing San Diego’s finest party bus
           provided by Cali Party Bus. Get the party started all the way to the ball and back
@@ -352,7 +418,7 @@ $(document).ready(function() {
       </p>
     </div>
   </div>
-  <p id="C4"></p>
+  <p id="C5"></p>
 </div>
  
   
@@ -360,11 +426,11 @@ $(document).ready(function() {
 <div class="container-fluid mainW padding latoB">
   <div class="row welcome text-center">
     <div class="col-12">
-      <h1 class="display-4">Attire and Conduct</h1>
+      <h1 class="display-4">Attire and Conduct / Documents</h1>
     </div>
     <hr>
 
-    <div class="row welcome text-center">
+    <div class="row align-items-center welcome text-center">
       <div class="col-12">
         <h3>Semi-Formal</h3>
       </div>
@@ -420,7 +486,7 @@ $(document).ready(function() {
   </div>
 
 
-  <div class="row text-center attire-container">
+  <div class="row align-items-center text-center attire-container">
        <img src="../img/allan.jpg" class="attire1">
        <img src="../img/juan.jpg" class="attire">
        <img src="../img/wesA.jpg" class="attire">
@@ -449,7 +515,7 @@ $(document).ready(function() {
       </a>
   </div>
 
-  <div class="row text-center attire-container">
+  <div class="row align-items-center text-center attire-container">
      <img src="../img/anh.jpg" class="attire1">
      <img src="../img/jovonne.jpg" class="attire">
      <img src="../img/poi.jpg" class="attire">
@@ -492,7 +558,7 @@ $(document).ready(function() {
       you are discovered under the influence of any substance, 
       <b>you will be sent away with no refund</b>!
       </p>
-      <p id="C5"></p>
+      <p id="C6"></p>
     </div>
   </div>
 </div>
@@ -580,6 +646,12 @@ $(document).ready(function() {
         <a href="https://www.eightelementswest.com/" target="_blank">
             <img id="eight_ele" src="../img/eight_ele.png">
         </a>
+        <a href="https://lajollaplayhouse.org/" target="_blank">
+            <img id="playhouse" src="../img/playhouse.jpg">
+        </a>
+        <a href="https://sdice.com/" target="_blank">
+            <img id="icerink" src="../img/icerink.jpg">
+        </a>
         <a href="https://www.fattykine.com/" target="_blank">
           <img id="fattykine" src="../img/fattykine.png">
         </a>
@@ -643,6 +715,21 @@ $(document).ready(function() {
         <a href="https://www.sdnhm.org/" target="_blank">
           <img id="thenat" src="../img/thenat.png">
         </a>
+        <a href="http://jimbos.com/" target="_blank">
+          <img id="jimbo" src="../img/jimbo.jpg">
+        </a>
+        <a href="https://www.camelliard.com/" target="_blank">
+          <img id="camellia" src="../img/camellia.png">
+        </a>
+        <a href="http://lolitasmexicanfood.com/" target="_blank">
+          <img id="lolita" src="../img/lolita.jpg">
+        </a>
+        <a href="https://www.burgerlounge.com/" target="_blank">
+          <img id="burger" src="../img/burger.png">
+        </a>
+        <a href="https://urbanplates.com/" target="_blank">
+          <img id="urban" src="../img/urban.jpg">
+        </a>
       </div>
       
         <div class="col-12">
@@ -656,4 +743,5 @@ $(document).ready(function() {
     
 </body>
 </html>
+
 
