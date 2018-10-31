@@ -179,6 +179,13 @@ html, body {
   padding-top: 2rem;
 }
 
+.welcome-committee {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+
 .welcome hr {
   border-top: 2px solid #b4b4b4;
   width: 95%;
@@ -391,8 +398,8 @@ table th {
 }
 
 .committee {
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
   border-radius: 60px;
   margin-bottom: 9px;
   -webkit-transition: 0.3s;
@@ -474,6 +481,7 @@ table th {
   margin-right: 0rem;
   margin-left: 1rem;
   font-size: 1.75rem;
+  margin-top: 4rem;
 }
 
 .feature-desc {
@@ -567,16 +575,30 @@ table th {
   margin-left: 1rem;
   margin-top: 0px;
   margin-bottom: 2rem;
-  width: 1170px;
-  height: 264px;
+  width: 1000px;
+  height: 225px;
 }
 
 #fleetscience2 {
   right: 0rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
-  width: 1170px;
-  height: 264px;
+  width: 1000px;
+  height: 225px;
+}
+
+.party {
+  width: 400px;
+  height: 266px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.ticket {
+  width: 533px;
+  height: 355px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .cnh{
@@ -687,8 +709,8 @@ textarea{
 }
 
 #sprinkles {
-  width: 220px;
-  height: 90px;
+  width: 160px;
+  height: 66px;
   margin: 5px;
 }
 
@@ -711,14 +733,14 @@ textarea{
 }
 
 #guayaki {
-  width: 150px;
-  height: 169px;
+  width: 130px;
+  height: 147px;
   margin: 5px;
 }
 
 #habit {
-  width: 200px;
-  height: 105px;
+  width: 170px;
+  height: 89px;
   margin: 5px;
 }
 
@@ -783,8 +805,8 @@ textarea{
 }
 
 #woodstock {
-  width: 200px;
-  height: 118px;
+  width: 180px;
+  height: 106px;
   margin: 5px;
 }
 
@@ -837,10 +859,59 @@ textarea{
 }
 
 #lot {
-  width: 220px;
-  height: 115px;
+  width: 140px;
+  height: 72px;
   margin: 5px;
 }
+
+#thenat {
+  width: 170px;
+  height: 87px;
+  margin: 5px;
+}
+
+#playhouse {
+  width: 210px;
+  height: 210px;
+  margin: 5px;
+}
+
+#icerink {
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+}
+
+#jimbo {
+  width: 170px;
+  height: 54px;
+  margin: 5px;
+}
+
+#camellia {
+  width: 180px;
+  height: 44px;
+  margin: 5px;
+}
+
+#lolita {
+  width: 170px;
+  height: 41px;
+  margin: 5px;
+}
+
+#burger {
+  width: 200px;
+  height: 61px;
+  margin: 5px;
+}
+
+#urban {
+  width: 130px;
+  height: 130px;
+  margin: 5px;
+}
+
 
 
 
@@ -1246,6 +1317,20 @@ textarea{
     height: 105px;
   }
 
+  .ticket {
+    width: 200px;
+    height: 133px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .party {
+    width: 200px;
+    height: 133px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
   #fleetscience1 {
     margin-left: 0rem;
     margin-top: 1rem;
@@ -1412,8 +1497,8 @@ textarea{
   }
 
   #eight_ele {
-    width: 180px;
-    height: 48px;
+    width: 250px;
+    height: 66px;
     margin: 5px;
   }
 
@@ -1442,8 +1527,50 @@ textarea{
   }
 
   #lot {
+    width: 130px;
+    height: 68px;
+    margin: 5px;
+  }
+
+  #playhouse {
     width: 150px;
-    height: 78px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #icerink {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  #jimbo {
+    width: 150px;
+    height: 47px;
+    margin: 5px;
+  }
+
+  #camellia {
+    width: 150px;
+    height: 37px;
+    margin: 5px;
+  }
+
+  #lolita {
+    width: 150px;
+    height: 36px;
+    margin: 5px;
+  }
+
+  #burger {
+    width: 150px;
+    height: 46px;
+    margin: 5px;
+  }
+
+  #urban {
+    width: 100px;
+    height: 100px;
     margin: 5px;
   }
   
@@ -1517,4 +1644,11 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+
+
+
+
+
+
 
