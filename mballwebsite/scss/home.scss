@@ -6,9 +6,41 @@
 
 @font-face { font-family: lavanderia; src: url('lavanderia regular.otf');}
 
+
+@media (min-width: 1200px) {
+
 html, body {
   position: relative;
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: .8rem; 
+}
+  
+.navbar-nav li {
+    padding-right: 20px;
+}
+  
+.nav-link {
+    font-size: 1.1em !important;
+}
+  
+
+hr {
+    color: white;
+    size: 2rem;
+    z-index: 5;
+}
+
+.logo {
+    height: 63px;
+    width: 122px;
+}
+
+.mask {
+    height: 63px;
+    width: 63px
 }
 
 .main {
@@ -34,10 +66,12 @@ html, body {
     margin-top: 21rem;
     margin-left: 1rem;
     color: #CEAC55;
+    font-size: 20px;
 }
 
 .parallax-art, .parallax-layer {
     height: 870px;
+    background-color: #13182E;
 }
 
 .parallax-art, .parallax-layer1 {
@@ -59,10 +93,11 @@ html, body {
 }
 
 .parallax-layer {
-  background-position: bottom center;
-  background-size: 1380px auto;
-  width: 100%;
-  position: absolute;
+    background-position: bottom center;
+    background-size: 1380px auto;
+    width: 100%;
+    position: absolute;
+    background-color: #13182E; 
 }
 
 .parallax-layer1 {
@@ -87,6 +122,7 @@ html, body {
 #para_art0 {
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
+    background-color: #13182E;
     top: 0px;
 }
 
@@ -115,7 +151,8 @@ html, body {
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-left: auto;
-	margin-right: auto;
+    margin-right: auto;
+    margin-top: 0px;
 	z-index: 99;
 	position: relative;
     background-color: #13182E;
@@ -187,14 +224,282 @@ html, body {
   transform: translate(-50%,-50%);
 }
 
+}
+
+@media (min-width: 1300px) {
+
+html, body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    padding: .8rem; 
+}
+  
+.navbar-nav li {
+    padding-right: 20px;
+}
+  
+.nav-link {
+    font-size: 2.2em !important;
+}
+
+hr {
+    color: white;
+    size: 2rem;
+    z-index: 5;
+}
+
+.mask {
+    height: 126px;
+    width: 126px
+}
+
+.logo {
+    height: 126px;
+    width: 244px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-x: hidden;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+.date {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    margin-top: 34rem;
+    margin-left: 1rem;
+    color: #CEAC55;
+    font-size: 40px;
+}
+
+.parallax-art, .parallax-layer {
+    height: 2600px;
+    width: 100%;
+    background-color: #13182E;
+}
+
+.parallax-art, .parallax-layer1 {
+    height: 600px;
+}
+
+.parallax-art, .parallax-layer2 {
+    height: 1500px;
+    width: 100%;
+}
+
+
+#parallax {
+    display: block;
+}
+
+.parallax-art{
+    position: relative;
+    z-index: 10;
+}
+
+.parallax-layer {
+    background-position: 0px 20px;
+    background-size: 2600px auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #13182E;
+  }
+
+.parallax-layer1 {
+    background-position: bottom center;
+    background-size: 1600px auto;
+    width: 100%;
+    position: absolute;
+    top: 20rem;
+}
+
+.parallax-layer2 {
+    background-position: bottom center;
+    background-size: 6800px 1450px;
+    width: 100%;
+    position: absolute;
+    top: 16rem;
+}
+
+.parallax-layer.parallax {
+    position: fixed;
+}
+
+#para_art0 {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-color: #13182E;
+    width: 100%;
+    top: 4rem;
+}
+
+#para_art1 {
+    background-image: url("../img/websitelogo.png");
+    background-repeat: no-repeat;
+    top: 6rem;
+    right: 0rem;
+}
+
+#para_art2 {
+    background-image: url("../img/foreground.png");
+    background-repeat: no-repeat;
+    top: 32rem;
+    right: 0rem;
+}
+
+#maincontain {
+    background-color: #13182E;
+	position: relative;
+    z-index: 98;
+    height: 100%;
+}
+
+#main {
+	max-width: 1800px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+	z-index: 99;
+	position: relative;
+    background-color: #13182E;
+    top: -4rem;
+}
+
+.feature-button {
+    background-color: #CEAC55;
+    width: 550px;
+    height: 92px;
+    margin-top: 20px; 
+    margin-left: 37rem;
+    position: relative;
+    color: white
+}
+
+.section {
+
+}
+
+.section.feature {
+	width: 100%;
+	max-width: none;
+	margin: 50px auto 120px;
+}
+
+.videocontain {
+	position: relative;
+	padding-bottom: 56.1%;
+	height: 0;
+	overflow: hidden;
+}
+
+.videocontain iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hook {
+    line-height: 3.5rem;
+}
+
+.open-padding {
+  padding: 80px 0 0px 0;
+}
+
+#btn {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: 2rem;
+    left: 51.2%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+#btn img {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+}
+
 @media (max-width: 598px) {
+
+    html, body {
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+    }
+      
+    hr {
+        color: white;
+        size: 2rem;
+        z-index: 5;
+    }
+      
+    .main {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-x: hidden;
+    }
     
     .date {
         font-family: 'Lato', sans-serif;
         text-align: center;
-        margin-top: 15rem;
+        margin-top: 18rem;
         margin-left: 1rem;
         color: #CEAC55;
+        font-size: 20px;
+    }
+
+    .lato {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .parallax-art{
+        position: relative;
+        z-index: 10;
+    }
+
+    .parallax-art, .parallax-layer {
+        height: 870px;
+        background-color: #13182E;
+    }
+    
+    .parallax-art, .parallax-layer1 {
+        height: 600px;
+    }
+    
+    .parallax-art, .parallax-layer2 {
+        height: 770px;
     }
 
     .parallax-layer {
@@ -202,7 +507,8 @@ html, body {
         background-size: 400px 400px;
         width: 100%;
         position: absolute;
-      }
+        background-color: #13182E; 
+    }
 
     .parallax-layer1 {
         background-position: bottom center;
@@ -219,9 +525,13 @@ html, body {
         top: 13rem;
     }
 
+    #parallax {
+        display: block;
+    }
+
     #para_art0 {
         background-image: url("../img/background.png");
-        top: -24rem;
+        top: -27rem;
         
     }
 
@@ -237,7 +547,22 @@ html, body {
         top: 11rem;
     }
 
+    #maincontain {
+        background-color: #13182E;
+        position: relative;
+        z-index: 98;
+        height: 100%;
+    }
+    
     #main {
+        max-width: 900px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 99;
+        position: relative;
+        background-color: #13182E;
         top: -6rem;
     }
 
@@ -246,8 +571,22 @@ html, body {
     }
 
     #btn {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: relative;
+        top: 90%;
         left: 52%;
+        transform: translateX(-50%);
+        z-index: 5;
     }
+
+    #btn img {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
 
     .feature-button {
         background-color: #CEAC55;
@@ -277,7 +616,32 @@ html, body {
         top: 190px;
       }
 
-      #background {
+    #background {
           height: 80%;
       }
+
+    .section {
+
+    }
+    
+    .section.feature {
+        width: 100%;
+        max-width: none;
+        margin: 50px auto 120px;
+    }
+    
+    .videocontain {
+        position: relative;
+        padding-bottom: 56.1%;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .videocontain iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
