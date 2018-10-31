@@ -11,17 +11,18 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-        <link href="../css/home.css" rel="stylesheet">
-        <script src="../js/parallax.js"></script>
-	
-	<!--Facebook Link Info-->
-  	<meta property="og:image" content="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44870339_1891746057569348_1970143537815093248_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=cb4de486d1991494058ae21387ac39ab&oe=5C835128" />
-  	<meta property="og:type" content="website" />
-  	<meta property="og:url" content="https://www.circlekmball.com/" />
-  	<meta property="og:title" content="UCSD CKI Masquerade Ball" />
-  	<meta property="og:description" content="UC San Diego Circle K International cordially invites you 
-  	to the 21st annual Masquerade Ball, the largest magical formal of the season. Fill your storybook
-  	with tales of this legendary night on a beautifully crafted wonderland." />
+  <link href="../css/home.css" rel="stylesheet">
+  <script src="../js/parallax.js"></script>
+
+
+  <!--Facebook Link Info-->
+  <meta property="og:image" content="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44870339_1891746057569348_1970143537815093248_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=cb4de486d1991494058ae21387ac39ab&oe=5C835128" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.circlekmball.com/" />
+  <meta property="og:title" content="UCSD CKI Masquerade Ball" />
+  <meta property="og:description" content="UC San Diego Circle K International cordially invites you 
+  to the 21st annual Masquerade Ball, the largest magical formal of the season. Fill your storybook
+  with tales of this legendary night on a beautifully crafted wonderland." />
 </head>
 
 
@@ -33,7 +34,7 @@ $(document).ready(function() {
     $("#para_art1").css('opacity', '0').animate({top: '-23rem', opacity: 1}, 1700);
   } else if($(window).width() > 1300) {
     $("#para_art1").css({top: '0rem'});
-    $("#para_art1").css('opacity', '0').animate({top: '4rem', opacity: 1}, 1700);
+    $("#para_art1").css('opacity', '0').animate({top: '6rem', opacity: 1}, 1700);
   } else {
     $("#para_art1").css({top: '-16rem'});
     $("#para_art1").css('opacity', '0').animate({top: '-13rem', opacity: 1}, 1700);
@@ -81,9 +82,9 @@ $(document).ready(function(){
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
-     <a class="navbar-brand logo-text" style="color: #7F818D" href="http://www.circlekmball.com/index.html">
-      <img src="../img/gold-mask.svg" style="height: 63px; width: 63px">
-      <img src="../img/mball-type-font.svg" style="height: 63px; width: 122px">
+     <a class="navbar-brand logo-text" style="color: #7F818D" href="index.html">
+      <img class="mask" src="../img/gold-mask.svg">
+      <img class="logo" src="../img/mball-type-font.svg">
      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" 
       data-target="#navbarResponsive">
@@ -93,20 +94,20 @@ $(document).ready(function(){
         <!-- ml-auto pushes navbar off to the right when full screened -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" style="color: #7F818D" href="http://www.circlekmball.com/index.html">Home</a>
+            <a class="nav-link" style="color: #7F818D" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #7F818D" href="http://www.circlekmball.com/about.html">About</a>
+            <a class="nav-link" style="color: #7F818D" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="color: #7F818D" href="https://goo.gl/forms/02cfcY9lHl5LWacv2"
             target="_blank">Ticketing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #7F818D" href="http://www.circlekmball.com/faq.html">FAQ</a>
+            <a class="nav-link" style="color: #7F818D" href="faq.html">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #7F818D" href="http://www.circlekmball.com/contact.html">Contact</a>
+            <a class="nav-link" style="color: #7F818D" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -117,7 +118,7 @@ $(document).ready(function(){
   <div class="parallax-art" id="parallax">
     <div class="parallax-layer parallax" id="para_art0" data-speed="2"></div>
     <div class="parallax-layer1 parallax" id="para_art1" data-speed="-130"></div>
-    <div class="parallax-layer2 parallax" id="para_art2" data-speed="30">
+    <div class="parallax-layer2 parallax" id="para_art2" data-speed="25">
       <h5 class="date"><b>NOVEMBER 17th, 2018</b></h5>
       <a href="#trans">
         <img id="btn" src="../img/arrow.png">
