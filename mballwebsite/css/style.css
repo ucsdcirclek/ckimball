@@ -20,7 +20,7 @@ html, body {
   font-size: 1.1em !important; }
 
 .main {
-  background-color: #13182E; }
+  background-color: #FFCF40; }
 
 .mainW {
   background-color: white; }
@@ -81,17 +81,16 @@ html, body {
   width: 1000px; }
 
 .btn-primary {
-    background-color: #FFCF40;
-    border: 1px solid #FFCF40;
-}
+  background-color: #193364;
+  border: 1px solid #193364; }
 
 .btn-block {
   width: 385px;
   margin-top: 1rem; }
 
 .btn-primary:hover {
-  background-color: #FFBF00;
-  border-color: #FFBF00; }
+  background-color: #193399;
+  border-color: #193399; }
 
 .jumbotron {
   padding: 1rem;
