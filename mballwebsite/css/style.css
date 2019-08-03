@@ -81,16 +81,17 @@ html, body {
   width: 1000px; }
 
 .btn-primary {
-  background-color: #193364;
-  border: 1px solid #193364; }
+    background-color: #FFCF40;
+    border: 1px solid #FFCF40;
+}
 
 .btn-block {
   width: 385px;
   margin-top: 1rem; }
 
 .btn-primary:hover {
-  background-color: #193399;
-  border-color: #193399; }
+  background-color: #FFBF00;
+  border-color: #FFBF00; }
 
 .jumbotron {
   padding: 1rem;
