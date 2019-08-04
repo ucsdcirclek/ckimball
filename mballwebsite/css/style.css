@@ -19,8 +19,9 @@ html, body {
 .nav-link {
   font-size: 1.1em !important; }
 
+/*Odd blocks*/
 .main {
-  background-color: #FFDC73; }
+  background-color: #FFD693; }
 
 .mainW {
   background-color: white; }
