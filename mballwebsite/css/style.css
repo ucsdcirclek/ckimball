@@ -5,10 +5,57 @@
   src: url("lavanderia regular.otf"); }
 
 html, body {
+  background-image: url("../img/bg.png");
+  background-repeat: repeat;
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222; }
+
+
+.accordion {
+    background-color: #EEE;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.accordion:after {
+        content: '\02795'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active, .accordion:hover {
+        background-color: #ccc;
+}
+
+.panel {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    color: black;
+    padding: 0 18px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    overflow: hidden;
+}
 
 .navbar {
   padding: .8rem; }
@@ -19,8 +66,9 @@ html, body {
 .nav-link {
   font-size: 1.1em !important; }
 
+/*Odd blocks*/
 .main {
-  background-color: #13182E; }
+  background-color: #FFD693; }
 
 .mainW {
   background-color: white; }
@@ -133,6 +181,14 @@ html, body {
   font-family: 'Lato', sans-serif;
   color: white;
   font-size: 16px; }
+
+.faq {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 16px; 
+  margin-top: 25px !important;
+}
+}
 
 .latoB {
   font-family: 'Lato', sans-serif;
@@ -841,6 +897,7 @@ textarea {
     font-size: 95%;
     padding: 8px 14px; }
   .display-4 {
+      margin-top:25px;
     font-size: 200%; }
   .attire {
     width: 109px;
@@ -887,6 +944,49 @@ textarea {
     padding: 1.2rem; } }
 
 @media (max-width: 576px) {
+    .accordion {
+        background-color: #EEE;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 75%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+.accordion:after {
+            content: '\02795'; /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+    .active:after {
+        content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        text-align: left;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        width: 75%;
+        color: black;
+        padding: 0 18px;
+        max-height: 0;
+        transition: max-height 0.2s ease-out;
+        background-color: white;
+        overflow: hidden;
+    }
   .century {
     font-family: century gothic;
     color: white;
@@ -908,6 +1008,7 @@ textarea {
   .carousel-indicators {
     display: none; }
   .display-4 {
+      margin-top: 25px;
     font-size: 160%; }
   .columns {
     width: 100%; }
@@ -1231,8 +1332,8 @@ figure {
   will-change: transform; }
 
 /*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-  padding: 1rem; }
+/*[class*="col-"] {
+  padding: 1rem; }*/
 
 /*Size references*/
 /*
