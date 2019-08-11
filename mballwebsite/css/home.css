@@ -4,9 +4,12 @@
 @font-face {
   font-family: lavanderia;
   src: url("lavanderia regular.otf"); }
-/*Small Screen*/
+
+
 @media (max-width: 767px) {
     html, body {
+        height: 100%;
+        width: 100%;
         position: relative;
         font-family: 'Poppins', sans-serif;
     }
@@ -113,7 +116,7 @@
     }
 
     #maincontain {
-        background-color: #13182E;
+        background-color: #12192F;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -127,7 +130,7 @@
         margin-right: auto;
         z-index: 99;
         position: relative;
-        background-color: #13182E;
+        background-color: #12192F;
         top: -6rem;
     }
 
@@ -284,21 +287,23 @@
     background-image: url("../img/foreground.png");
     background-repeat: no-repeat;
     top: 11rem; }
-  #maincontain {
-    background-color: #13182E;
-    position: relative;
-    z-index: 98;
-    height: 100%; }
-  #main {
-    max-width: 900px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 99;
-    position: relative;
-    background-color: #13182E;
-    top: -6rem; }
+    #maincontain {
+        background-color: #12192F;
+        position: relative;
+        z-index: 98;
+        height: 100%;
+    }
+    #main {
+        max-width: 900px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 99;
+        position: relative;
+        background-color: #12192F;
+        top: -6rem;
+    }
   .hook {
     line-height: 1.8rem; }
   #btn {
@@ -352,10 +357,7 @@
     left: 0;
     width: 100%;
     height: 100%; } }
-/*Medium Screen*/
-
-/*Big Screen*/
-@media (min-width: 894px) {
+    @media (min-width: 894px) {
     html, body {
     position: relative;
     font-family: 'Poppins', sans-serif;
@@ -491,24 +493,24 @@ hr {
 }
 
 #maincontain {
-    background-color: #13182E;
+    background-color: #12192F;
     position: relative;
     z-index: 98;
     height: 100%;
 }
 
-#main {
-    max-width: 900px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    z-index: 99;
-    position: relative;
-    background-color: #13182E;
-    top: 0px;
-}
+    #main {
+        max-width: 900px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        z-index: 99;
+        position: relative;
+        background-color: #12192F;
+        top: 0px;
+    }
 
 .feature-button {
     background-color: #CEAC55;
@@ -571,8 +573,6 @@ hr {
     }
 
 }
-    
-
 @media (min-width: 1024px) {
     html, body {
         position: relative;
@@ -709,7 +709,7 @@ hr {
     }
 
     #maincontain {
-        background-color: #13182E;
+        background-color: #12192F;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -724,7 +724,7 @@ hr {
         margin-top: 0px;
         z-index: 99;
         position: relative;
-        background-color: #13182E;
+        background-color: #12192F;
         top: 0px;
     }
 
@@ -924,7 +924,7 @@ hr {
     }
 
     #maincontain {
-        background-color: #13182E;
+        background-color: #12192F;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -939,7 +939,7 @@ hr {
         margin-top: 0px;
         z-index: 99;
         position: relative;
-        background-color: #13182E;
+        background-color: #12192F;
         top: 0px;
     }
 
@@ -1123,23 +1123,23 @@ hr {
         background-image: url("../img/background.png");
         background-repeat: no-repeat;
         background-color: #13182E;
-        top: 0px;
+        top: 90px;
     }
 
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -13rem;
+        top: -5rem;
     }
 
     #para_art2 {
         background-image: url("../img/foreground.png");
         background-repeat: no-repeat;
-        top: 13rem;
+        top: 22rem;
     }
 
     #maincontain {
-        background-color: #13182E;
+        background-color: #12192F;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -1151,10 +1151,10 @@ hr {
         padding-right: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
+        margin-top: 150px;
         z-index: 99;
         position: relative;
-        background-color: #13182E;
+        background-color: #12192F;
         top: 0px;
     }
 
