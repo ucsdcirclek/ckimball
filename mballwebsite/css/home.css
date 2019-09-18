@@ -1123,19 +1123,19 @@ hr {
         background-image: url("../img/background.png");
         background-repeat: no-repeat;
         background-color: #13182E;
-        top: 90px;
+        top: 0px;
     }
 
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -5rem;
+        top: -13rem;
     }
 
     #para_art2 {
         background-image: url("../img/foreground.png");
         background-repeat: no-repeat;
-        top: 22rem;
+        top: 13rem;
     }
 
     #maincontain {
@@ -1151,7 +1151,7 @@ hr {
         padding-right: 30px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 150px;
+        margin-top: 0px;
         z-index: 99;
         position: relative;
         background-color: #12192F;
