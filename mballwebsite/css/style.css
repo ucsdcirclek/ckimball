@@ -5,6 +5,11 @@
   font-family: lavanderia;
   src: url("lavanderia regular.otf"); }
 
+.sponsors{
+    margin-top:1rem;
+    font-size:22px;
+    color:black;
+}
     html, body {
         background-color: white;
 
@@ -799,6 +804,15 @@ textarea {
   cursor: text;
   white-space: pre-wrap;
   padding: 2px; }
+.imgbox {
+    display:grid;
+    height:100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height:100vh;
+    margin:auto;
+}
 
 #fattykine {
   width: 200px;
@@ -824,8 +838,8 @@ textarea {
   margin: 5px; }
 
 #farmers {
-  width: 600px;
-  height: 363px;
+  width: 200px;
+  height: 113px;
   margin: 5px; }
 
 #guayaki {
@@ -1261,6 +1275,17 @@ textarea {
     height: 133px;
     margin-bottom: 1rem;
     margin-top: 1rem; }
+    .imgbox {
+        display: grid;
+        height: 100%;
+    }
+
+    .center-fit {
+        max-width: 100%;
+        max-height: 100vh;
+        margin: auto;
+    }
+
   #fleetscience1 {
     margin-left: 0rem;
     margin-top: 1rem;
@@ -1419,7 +1444,11 @@ textarea {
     width: 100px;
     height: 100px;
     margin: 5px; } }
-
+@media (min-width: 1367px) {
+    #trevorproject {
+        margin-top: 5em;
+    }
+}
 /*---Firefox Bug Fix --*/
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
