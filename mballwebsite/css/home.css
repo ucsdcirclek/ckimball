@@ -35,14 +35,14 @@
         text-align: center;
         margin-top: 18rem;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 24px;
     }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -116,7 +116,7 @@
     }
 
     #maincontain {
-        background-color: #12192F;
+        background-color: black;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -130,7 +130,7 @@
         margin-right: auto;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color: black;
         top: -6rem;
     }
 
@@ -229,13 +229,13 @@
     text-align: center;
     margin-top: 18rem;
     margin-left: 1rem;
-    color: #CEAC55;
+    color: white;
     font-size: 24px; }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -288,7 +288,7 @@
     background-repeat: no-repeat;
     top: 11rem; }
     #maincontain {
-        background-color: #12192F;
+        background-color: black;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -301,7 +301,7 @@
         margin-right: auto;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color:black;
         top: -6rem;
     }
   .hook {
@@ -413,14 +413,14 @@ hr {
     text-align: center;
     margin-top: 21rem;
     margin-left: 1rem;
-    color: #CEAC55;
+    color: white;
     font-size: 24px;
 }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -493,7 +493,7 @@ hr {
 }
 
 #maincontain {
-    background-color: #12192F;
+    background-color: black;
     position: relative;
     z-index: 98;
     height: 100%;
@@ -508,7 +508,7 @@ hr {
         margin-top: 0px;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color:black;
         top: 0px;
     }
 
@@ -629,14 +629,14 @@ hr {
         text-align: center;
         margin-top: 21rem;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 24px;
     }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -709,7 +709,7 @@ hr {
     }
 
     #maincontain {
-        background-color: #12192F;
+        background-color: black;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -724,7 +724,7 @@ hr {
         margin-top: 0px;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color: black;
         top: 0px;
     }
 
@@ -844,14 +844,14 @@ hr {
         text-align: center;
         margin-top: 21rem;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 24px;
     }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -924,7 +924,7 @@ hr {
     }
 
     #maincontain {
-        background-color: #12192F;
+        background-color: black;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -939,7 +939,7 @@ hr {
         margin-top: 0px;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color: black;
         top: 0px;
     }
 
@@ -1059,14 +1059,14 @@ hr {
         text-align: center;
         margin-top: 21rem;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 24px;
     }
     #timer {
         font-family: 'Lato', sans-serif;
         text-align: center;
         margin-left: 1rem;
-        color: #CEAC55;
+        color: white;
         font-size: 22px;
         font-weight: bold;
     }
@@ -1139,7 +1139,7 @@ hr {
     }
 
     #maincontain {
-        background-color: #12192F;
+        background-color: black;
         position: relative;
         z-index: 98;
         height: 100%;
@@ -1154,7 +1154,7 @@ hr {
         margin-top: 150px;
         z-index: 99;
         position: relative;
-        background-color: #12192F;
+        background-color:black;
         top: 0px;
     }
 
