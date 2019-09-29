@@ -173,7 +173,7 @@ img {
         content: "\2796"; /* Unicode character for "minus" sign (-) */
     }
 
-    .active, .accordion:hover {
+ .accordion:hover {
         background-color: #e3c58b;
     }
 
@@ -224,20 +224,22 @@ img {
 
     #carouselControls {
         display: none;
-        left: 8%;
+        
         top: 20px;
     }
 
     #carouselControls2 {
         display: none;
-        left: 8%;
+      
         top: 20px;
     }
 
-    .slide {
-        width: 300px;
-        height: 315px;
-    }
+.slide {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+  
+}
 
     .carousel-item {
         left: 13.5%;
@@ -1066,6 +1068,11 @@ textarea {
 
 }
 */
+.welcomeDIFF {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
 @media (max-width: 768px) {
   .carousel-caption {
     top: 45%; }
@@ -1126,7 +1133,14 @@ textarea {
     padding: 1.2rem; } }
 
 @media (max-width: 576px) {
-    
+    .welcomeDIFF {
+        width: 115%;
+        margin-left: -7.5%;
+        padding-top: 2rem;
+    }
+    .sponsors {
+        margin-top:7rem;
+    }
   .century {
     font-family: century gothic;
     color: white;
