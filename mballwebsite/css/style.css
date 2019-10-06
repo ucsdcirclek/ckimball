@@ -5,6 +5,10 @@
   font-family: lavanderia;
   src: url("lavanderia regular.otf"); }
 
+
+.h3over {
+    font-size: 29px  !important;
+}
 .sponsors{
     margin-top:1rem;
     font-size:22px;
@@ -125,9 +129,16 @@ img {
         }
 
 .fsize {
+    text-align:center;
     font-family: Verdana,sans-serif;
-    font-size: 15px;
-    line-height: 1.5
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.label {
+    text-align:center;
+    font-size:20px;
+    line-height:1.5;
 }
 .subtitle {
     color: white;
@@ -138,7 +149,7 @@ img {
     font-family: "Segoe UI",Arial,sans-serif;
     font-weight: 400;
     margin: 10px 0; 
-    font-size:24px;
+    
 }
 .title {
     font-size:15px;
