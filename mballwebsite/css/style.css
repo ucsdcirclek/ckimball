@@ -9,9 +9,25 @@
 .h3over {
     font-size: 29px  !important;
 }
+#partners {
+
+    white-space: nowrap;
+    width: 100%;
+    
+    text-align:center;
+}
+.logo-image {
+    vertical-align: middle;
+    padding: 1%;
+    display: inline-table;
+    font-size:0;
+}
+    .logo-image img {
+        max-width: 100%;
+    }
 .sponsors{
     margin-top:1rem;
-    font-size:22px;
+    font-size:16px;
     color:black;
 }
     html, body {
@@ -313,24 +329,15 @@ img {
         border-radius: 0;
     }
 
-    .attire1 {
-        width: 218px;
-        height: 326px;
-        margin: 2rem;
-        float: left;
-        display: block;
-    }
 
     .attire {
-        width: 218px;
-        height: 326px;
+        width: 60%;
+        height: auto;
         margin: 2rem;
         display: block;
+        float:left;
     }
 
-    .attire-container {
-        margin-left: 12rem;
-    }
 
     .padding {
         padding-bottom: 1rem;
@@ -1108,9 +1115,7 @@ textarea {
     height: 163px;
     margin: 6px;
     float: left; }
-  .attire-container {
-    margin-left: 6rem;
-    margin-top: 1rem; }
+
   .feature-title {
     margin-right: 1rem; }
   .feature-desc {
@@ -1193,8 +1198,7 @@ textarea {
     display: none; }
   .attire {
     display: none; }
-  .attire-container {
-    margin-left: 5rem; }
+
   .committee {
     width: 180px;
     height: 180px;
