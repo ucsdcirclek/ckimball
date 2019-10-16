@@ -268,9 +268,6 @@ img {
   
 }
 
-    .carousel-item {
-        left: 13.5%;
-    }
 
     .carousel-inner img {
         width: 218px;
@@ -1088,7 +1085,7 @@ textarea {
 */
 .welcomeDIFF {
     width: 100%;
-    margin: 0 auto;
+
     padding-top: 2rem;
 }
 @media (max-width: 768px) {
@@ -1352,7 +1349,7 @@ textarea {
     font-size: 2em;
     padding: .7rem; }
   #farmers {
-    width: 350px;
+    width: 300px;
     height: 212px;
     margin: 5px; }
   #culture {
