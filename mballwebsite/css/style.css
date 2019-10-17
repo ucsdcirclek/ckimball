@@ -21,6 +21,7 @@
     padding: 1%;
     display: inline-table;
     font-size:0;
+	width:35%;
 }
     .logo-image img {
         max-width: 100%;
