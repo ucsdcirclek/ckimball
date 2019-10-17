@@ -109,7 +109,7 @@
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -23rem;
+        top: -15rem;
     }
 
     #para_art2 {
@@ -135,6 +135,7 @@
         position: relative;
         background-color: black;
         top: -6rem;
+        text-align:center;
     }
 
     .hook {
@@ -163,7 +164,6 @@
         width: 250px;
         height: 50px;
         margin-top: 20px;
-        margin-left: 2rem;
         color: white;
     }
 
@@ -285,7 +285,7 @@
   #para_art1 {
     background-image: url("../img/websitelogo.png");
     background-repeat: no-repeat;
-    top: -23rem; }
+    top: -15rem; }
   #para_art2 {
     background-image: url("../img/foreground.png");
     background-repeat: no-repeat;
@@ -327,7 +327,6 @@
     width: 250px;
     height: 50px;
     margin-top: 20px;
-    margin-left: 2rem;
     color: white; }
   #logo {
     width: 300px;
@@ -486,7 +485,7 @@ hr {
 #para_art1 {
     background-image: url("../img/websitelogo.png");
     background-repeat: no-repeat;
-    top: -13rem;
+    top: -11rem;
 }
 
 #para_art2 {
@@ -696,13 +695,13 @@ hr {
         background-image: url("../img/background.png");
         background-repeat: no-repeat;
         background-color: #13182E;
-        top: 0px;
+        top: -10rem;
     }
 
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -13rem;
+        top: 0rem;
     }
 
     #para_art2 {
@@ -917,7 +916,7 @@ hr {
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -13rem;
+        top: 4rem;
     }
 
     #para_art2 {
@@ -1126,13 +1125,13 @@ hr {
         background-image: url("../img/background.png");
         background-repeat: no-repeat;
         background-color: #13182E;
-        top: 90px;
+        height:100%;
     }
 
     #para_art1 {
         background-image: url("../img/websitelogo.png");
         background-repeat: no-repeat;
-        top: -5rem;
+        top: 6rem;
     }
 
     #para_art2 {
