@@ -6,6 +6,12 @@
   src: url("lavanderia regular.otf"); }
 
 
+ul.nav {
+    text-align:center;
+}
+ul.nav li {
+    display:inline-block;
+}
 .h3over {
     font-size: 29px  !important;
 }
@@ -827,9 +833,9 @@ textarea {
     height:100%;
 }
 .center-fit {
-    max-width: 100%;
-    max-height:100vh;
-    margin:auto;
+    display:block;
+    margin:0 auto;
+
 }
 
 #fattykine {
@@ -1087,9 +1093,14 @@ textarea {
 .welcomeDIFF {
     width: 100%;
 
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 @media (max-width: 768px) {
+    .welcome {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
   .carousel-caption {
     top: 45%; }
   .carousel-caption h1 {
@@ -1150,7 +1161,7 @@ textarea {
     .welcomeDIFF {
         width: 115%;
         margin-left: -7.5%;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .sponsors {
         margin-top:7rem;
