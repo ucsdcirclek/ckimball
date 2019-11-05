@@ -126,9 +126,11 @@ $(document).on('click', 'a[href="#Top"]', function (event) {
                         <a class="nav-link" style="color: #7F818D" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #7F818D" href="https://bit.ly/gotomball2019"
-                           target="_blank">Ticketing</a>
-                    </li> 
+                        <a class="nav-link" style="color: #7F818D" href="details.html">Event Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="ticketing.html">Ticketing</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #7F818D" href="faq.html">FAQ</a>
                     </li>
@@ -141,87 +143,114 @@ $(document).on('click', 'a[href="#Top"]', function (event) {
     </nav>
 
     <div id="Top" class="faq">
-        <div class="w3-content" style="max-width:1100px;margin-top:80px">
-            <div class="w3-row-padding" id="about">
-                <div id="Top" class="col-12">
-                    <div class="w3-center w3-padding-64">
-                        <div id="Top" class="col-12">
-                            <a href="#Top"><img src="../img/arrowup.png" class="arrowup2"></a>
-                            <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">FAQ</span>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="container-fluid mainW latoB">
+        <div class="row welcome text-center">
+
+            <div class="col-12" style="margin-top:3rem;">
+                <h1 style="color: black" class="display-5">Frequently Asked Questions</h1>
             </div>
-            <!--- Welcome Section
-        <div id="Top" class="container-fluid padding open-padding2">
-            <div class="row welcome text-center ">
-                <div id="Top" class="col-12">
-                    <a href="#Top"><img src="../img/arrowup.svg" class="arrowup2"></a>
-                    <h1 class="display-4">Frequently Asked Questions</h1>
-                </div>
-            </div>
-        </div> -->
-        </div>
-        <!--Questions and Answers-->
-        <button class="accordion">Are refunds available? </button>
-        <div class="panel">
-            <p>Unfortunately, we are unable to refund any tickets. 
-                Ticket transfers would be handled on a case-by-case basis. 
-                Please email mball.operations@ucsdcki.org if you need to transfer your ticket!</p>
-</div>
-        <button class="accordion">What perks will my ticket give me? </button>
-        <div class="panel">
-            <p>
-                With your ticket, you will receive a three-course meal, alongside access to our silent disco, silent auction, photobooth, escape room and more!
-            </p>
-        </div>        <button class="accordion">
-    Am I allowed a plus one?
-</button>
-        <div class="panel">
-            <p>Yes! Please make sure to provide their contact information when you purchase your ticket.</p>
-        </div>        <button class="accordion">
-    How much is parking?
-</button>
-        <div class="panel">
-            <p>
-                Self-parking will be $5 and valet parking will cost $10.
-            </p>
-        </div>        <button class="accordion">
-    I traveled from another city, is there a place for me to stay?
-</button>
-        <div class="panel">
-            <p>
-                Yes! If you are comfortable with it, we will be able to house you with one of our Circle K members. More information about housing will be available as we get closer to the event.
-            </p>
-        </div>        <button class="accordion">
-    How will I know if there is a Masquerade Ball update?
-</button>
-        <div class="panel">
-            <p>
-                RSVP on our Facebook event page or follow us on Instagram for the most up-to-date news 
-            </p>
+            <hr>
         </div>
 
-        <!--Script for accordion menu-->
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+    </div>
+    <!--Questions and Answers-->
+    <button class="accordion">Are refunds available? </button>
+    <div class="panel">
+        <p>
+            Unfortunately, we are unable to refund any tickets.
+            Ticket transfers would be handled on a case-by-case basis.
+            Please email mball.operations@ucsdcki.org if you need to transfer your ticket!
+        </p>
+    </div>
+    <button class="accordion">What perks will my ticket give me? </button>
+    <div class="panel">
+        <p>
+            With your ticket, you will receive a three-course meal, alongside access to our silent disco, silent auction, photobooth, escape room and more!
+        </p>
+    </div>
+    <button class="accordion"> What is the dress attire?</button>
+    <div class="panel">
+        <p>The dress attire is formal. Suggested attire includes, but is not limited to:</p>
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-        </script>
-    </div> 
+        <ul>
+            <li>Masks (highly encouraged)</li>
 
-        <!--
+            <li>Suits (dress shirts, slacks/trousers, etc.)</li>
+
+            <li>Dresses (short or long)</li>
+
+            <li>One piece (rompers/jumpsuit)</li>
+
+            <li>Dress shoes</li>
+        </ul>
+    </div>
+    
+    <button class="accordion">
+        Am I allowed a plus one?
+    </button>
+    <div class="panel">
+        <p>Yes! Please make sure to provide their contact information when you purchase your ticket.</p>
+    </div>
+    <button class="accordion">
+        How much is parking?
+    </button>
+    <div class="panel">
+        <p>
+            Self-parking will be $5 and valet parking will cost $10.
+        </p>
+    </div>
+    <button class="accordion">
+        I traveled from another city, is there a place for me to stay?
+    </button>
+    <div class="panel">
+        <p>
+            Yes! If you are comfortable with it, we will be able to house you with one of our Circle K members. More information about housing will be available as we get closer to the event. 
+            Please see and fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSf073jj-x-AFwRaXgUcBO7bh7DSjoVB3gWc-USh-5_kH5w8xQ/viewform?fbclid=IwAR0nnZGjdVzP-i_cB1c3Ty_wsycixe-f8eBU-9kRR_uQPTEWFgqdBk4Oqj0">this</a> form if you are able to volunteer a place for our guests to stay. 
+        </p>
+    </div>
+    <button class="accordion">
+        What items are prohibited?
+    </button>
+    <div class="panel">
+        <p>
+            Prohibited items includes (but is not limited to) : weapons, sharp objects, wallet chains, water bottles, containers with screw-on caps, alcohol, flasks, any illegal substances,
+            tobacco products, lighters, matches, markers, glow in the dark items, food items, gum, open mint containers, and glitter.
+        </p>
+        <p>
+            Attendees will be allowed one small purse. You will be searched before
+            entering so don't bring anything you wouldn't want confiscated
+        </p>
+    </div>
+    <button class="accordion">
+        How will I know if there is a Masquerade Ball update?
+    </button>
+    <div class="panel">
+        <p>
+            RSVP on our Facebook event page or follow us on Instagram for the most up-to-date news
+        </p>
+    </div>
+
+    <!--Script for accordion menu-->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    </div>
+
+    <!--
         <p></p>
         <div id="Top" class="mobile-faq container-fluid main lato">
             <div class="row welcome text-center">
@@ -414,22 +443,20 @@ $(document).on('click', 'a[href="#Top"]', function (event) {
         </div>
     </div>
     -->
-    
-
-        <!--Footer
-        <footer>
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <img class="ckiword" src="../img/ckiwordB.png">
-                        <img class="cnh" src="../img/cnh.png">
-                    </div>
-                    <img class="masthead" src="../img/masthead.png">
+    <!--Footer
+    <footer>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img class="ckiword" src="../img/ckiwordB.png">
+                    <img class="cnh" src="../img/cnh.png">
                 </div>
+                <img class="masthead" src="../img/masthead.png">
             </div>
+        </div>
 
 
-        </footer> -->
+    </footer> -->
 
 </body>
 </html>

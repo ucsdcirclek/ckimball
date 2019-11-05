@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--home-->
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/mask.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, shrink-to-fit=no">
+    <title>Masquerade Ball</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="../css/home.css" rel="stylesheet">
+    <script src="../js/parallax.js"></script>
+
+
+    <!--Facebook Link Info-->
+    <meta property="og:image" content="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/44870339_1891746057569348_1970143537815093248_o.jpg?_nc_cat=101&_nc_ht=scontent-lax3-1.xx&oh=cb4de486d1991494058ae21387ac39ab&oe=5C835128" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.gotomball.com/" />
+    <meta property="og:title" content="Masquerade Ball" />
+    <meta property="og:description" content="UC San Diego Circle K International cordially invites you
+  to the 21st annual Masquerade Ball, the largest magical formal of the season. Fill your storybook
+  with tales of this legendary night on a beautifully crafted wonderland." />
+    <style>
+        timer {
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+
+<script>
+    //Float down fade in script
+    $(document).ready(function () {
+        if ($(window).width() < 481) {
+            $("#para_art1").css({ top: '-15rem' });
+            $("#para_art1").css('opacity', '0').animate({ top: '-13rem', opacity: 1 }, 1700);
+        } else if ($(window).width() > 1300) {
+            $("#para_art1").css({ top: '0rem' });
+            $("#para_art1").css('opacity', '0').animate({ top: '6rem', opacity: 1 }, 1700);
+        } else {
+            $("#para_art1").css({ top: '-16rem' });
+            $("#para_art1").css('opacity', '0').animate({ top: '-13rem', opacity: 1 }, 1700);
+        }
+    });
+
+    //Smooth scroll transition
+    $(document).on('click', 'a[href="#trans"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1500);
+    });
+
+    //Handles infinite scroll side effect
+    $(document).ready(function () {
+        var eTop = $("#limit").offset().top;
+        $(document).scrollTop(eTop);
+        var eHeight = $("#limit").height();
+        var eBottom = eTop + eHeight - $(window).height();
+        $(document).on("scroll", function (e) {
+            var windowScrollTop = $(window).scrollTop();
+            if (windowScrollTop < eTop) {
+                console.log("not allowed");
+                $(document).scrollTop(eTop);
+            }
+            else if (windowScrollTop > eBottom) {
+                $(document).scrollTop(eBottom);
+            }
+            else {
+                console.log("allowed");
+            }
+        });
+    });
+
+
+
+
+</script>
+
+<body id="limit">
+
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-text" style="color: #7F818D" href="index.html">
+                <img src="../img/testmask.png" style="height: 63px; width: 63px">
+                <img src="../img/testfont.png" style="height: 63px; width: 122px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <!-- ml-auto pushes navbar off to the right when full screened -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="details.html">Event Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="ticketing.html">Ticketing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #7F818D" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="page">
+        <div class="parallax-art" id="parallax">
+            <div class="parallax-layer parallax" id="para_art0" data-speed="2"></div>
+            <div class="parallax-layer1 parallax" id="para_art1" data-speed="-130"></div>
+            <div class="parallax-layer2 parallax" id="para_art2" data-speed="25">
+                <!--<h5 class="date"><b>November 16, 2019</b></h5> -->
+                <p id="timer" style="text-align:center;"></p>
+
+                <!--<script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("November 16, 2019 19:00:00").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
+
+                        // Get today's date and time
+                        var now = new Date().getTime();
+
+                        // Find the distance between now and the count down date
+                        var distance = countDownDate - now;
+
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        // Output the result in an element with id="demo"
+                        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                            + minutes + "m " + seconds + "s ";
+
+                        // If the count down is over, write some text
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("timer").innerHTML = "NOW";
+                        }
+                    }, 1000);
+                </script> -->
+                <!--<a href="#trans">
+                    <img id="btn" src="../img/arrow.png">
+                </a> -->
+                <div id="trans"></div>
+            </div>
+        </div>
+
+        <div id="maincontain">
+            <div id="main">
+                <p class="lato">
+                    La Jolla Kiwanis and UC San Diego Circle K cordially invites you to the 22nd Annual Masquerade Ball on November 16, 2019.
+                    Join us as we Uncover Lost Riches at our first ever large-scale Kiwanis Family event and fundraiser!
+                </p>
+                <p class="lato hook">Every ticket purchase goes towards the nonprofit charity The Trevor Project!</p>
+                <a href="https://bit.ly/gotomball2019" target="_blank">
+                    <button type="button" class="btn feature-button lato lead">Buy Your Tickets Now!</button>
+                </a>
+                <a href="https://bit.ly/mballserviceauction2019" target="_blank">
+                    <button type="button" class="btn feature-button lato lead">Service Auction Signups!</button>
+                </a>
+
+                <div class="container">
+                    <h2>Responsive Embed</h2>
+                    <p>Create a responsive video and scale it nicely to the parent element with an 16:9 aspect ratio</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yPpB-7l6u9g"></iframe>
+                    </div>
+                </div>
+
+                <script>
+                    const myIframe = document.getElementById("myIframe");
+
+                    function change() {
+                        const iframeWindow = myIframe.contentWindow;
+                        // const iframeDocument = myIframe.contentDocument;
+                        console.log(iframeWindow);
+                    }
+                </script>
+            </div>
+        </div>
+
+</body>

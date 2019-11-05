@@ -395,6 +395,15 @@ img {
   margin: 0 auto;
   padding-top: 2rem; }
 
+.welcomeTicket {
+    width: 75%;
+    margin: 0 auto;
+}
+.welcomeAbout {
+    width: 75%;
+    margin: 0 auto;
+}
+
 .welcome-committee {
   width: 100%;
   margin: 0 auto;
